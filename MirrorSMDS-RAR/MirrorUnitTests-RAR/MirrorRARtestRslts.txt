@@ -1,0 +1,75 @@
++++MirrorRAR Test Run+++
+Testing the file MirrorRAR.cpp
+
+-----------------------------------------
+Input File:	smtst_10_in.txt	Output File:	smtst_10_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_11_in.txt	Output File:	smtst_11_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_12_in.txt	Output File:	smtst_12_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_13_in.txt	Output File:	smtst_13_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_14_in.txt	Output File:	smtst_14_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_15_in.txt	Output File:	smtst_15_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_16_in.txt	Output File:	smtst_16_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_17_in.txt	Output File:	smtst_17_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_1_in.txt	Output File:	smtst_1_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_2_in.txt	Output File:	smtst_2_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_3_in.txt	Output File:	smtst_3_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_4_in.txt	Output File:	smtst_4_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_5_in.txt	Output File:	smtst_5_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_6_in.txt	Output File:	smtst_6_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_7_in.txt	Output File:	smtst_7_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_8_in.txt	Output File:	smtst_8_out.txt
+Passed
+
+-----------------------------------------
+Input File:	smtst_9_in.txt	Output File:	smtst_9_out.txt
+Passed
+
+-----------------------------------------
+All tests passed
+
+---MirrorRAR Test Run---

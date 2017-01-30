@@ -1,0 +1,97 @@
+2
+X. XX
+X. XX
+10
+XX.....XXX XX...X.X..
+XX..XX...X X.X.XX.XX.
+XX....XX.X XXX.XXX.XX
+..X...XX.. ......XXXX
+XX.X..XX.. .XX.XXX..X
+X..XXX.XX. ..XX..X.XX
+XXXX...... ..XX...X..
+XX.XXX.XXX X.XX....XX
+.XX.XX.X.X X...XX..XX
+..X.X...XX XXX.....XX
+8
+X..X.XX. .XX...X.
+.XX..X.X X...X.X.
+XXX.XX.X XXXXXXX.
+.X.XXX.. ..XXX.XX
+.X..XXX. X..X..XX
+XXX..X.. .XX..X.X
+XX.XXXXX .XXXXXXX
+XXXXX... X.X..XXX
+2
+X. X.
+.. ..
+8
+..XX..XX ..XX..XX
+..XX..X. ..XX..X.
+.X....XX .X....XX
+X...XXX. X...XXX.
+XXX..X.. XXX..X..
+.X.X...X .X.X...X
+.X.X..X. .X.X..X.
+X.XXXXXX X.XXXXXX
+5
+.XX.. ..XX.
+..X.X X.X..
+.XXXX XXXX.
+.XXXX XXXX.
+...X. .X...
+9
+.......XX X.XXXX.XX
+X.X...... X..X..X.X
+XX.XX...X ....X.X.X
+..XXX..XX ......XX.
+X.XXX.X.X ..XXX.X.X
+...X....X ..XXXXXX.
+XX.XXXXX. .X.XX...X
+X..X.X..X ..X...X..
+X.X.X.XXX .XX.X.XXX
+8
+.X.....X .X.....X
+X..XXXX. X..XXXX.
+X.X.X... X.X.X...
+.X..X.X. .X..X.X.
+..X..X.. ..X..X..
+.X.XX..X .X.XX..X
+.X...XX. .X...XX.
+X.XX...X X.XX...X
+5
+..XXX XXX..
+.X..X X..X.
+...X. .X...
+X.X.. ..X.X
+..XXX XXX..
+4
+.X.. ...X
+...X X...
+..X. ..XX
+X.X. .X..
+5
+XX... XXXXX
+XX.XX XXXXX
+.X.XX XXXXX
+.X.X. XXXXX
+..XXX XXXXX
+10
+....XXX..X XXXXXXXXXX
+XXXX..X... XXXXXXXXXX
+X.XX.....X XXXXXXXXXX
+XXX..X...X XXXXXXXXXX
+X.XX.X.X.. XXXXXXXXXX
+.XX.XX...X XXXXXXXXXX
+X.XXX.X..X XXXXXXXXXX
+.......X.. XXXXXXXXXX
+.X.XX.X.X. XXXXXXXXXX
+.XX.XXX... XXXXXXXXXX
+6
+.X.X.. ..XX..
+X.X.XX XXX.XX
+XXX.X. ..XX.X
+..XX.X XXX.X.
+XXX.XX X.X.XX
+..XX.. .X.X..
+1
+X X

@@ -1,0 +1,67 @@
++++MirrorRAR Test Run+++
+Testing the file MirrorRAR.cpp against MirrorAMD.cpp
+
+-----------------------------------------
+Input File:	smtst_10_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_11_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_12_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_13_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_14_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_15_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_16_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_17_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_18_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_19_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_1_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_20_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_2_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_3_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_4_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_5_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_6_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_7_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_8_in.txt	Passed
+
+-----------------------------------------
+Input File:	smtst_9_in.txt	Passed
+
+-----------------------------------------
+All tests passed
+
+---MirrorRAR Test Run---

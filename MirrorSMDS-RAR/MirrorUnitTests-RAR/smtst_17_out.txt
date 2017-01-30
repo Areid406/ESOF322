@@ -1,0 +1,2 @@
+Pattern 1 was rotated 90 degrees.
+Pattern 2 was improperly transformed.

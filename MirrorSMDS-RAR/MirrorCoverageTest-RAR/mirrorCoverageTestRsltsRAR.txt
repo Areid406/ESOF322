@@ -1,0 +1,152 @@
+File 'MirrorRAR.cpp'
+Lines executed:100.00% of 58
+Creating 'MirrorRAR.cpp.gcov'
+
+File '/usr/include/c++/4.7/iostream'
+Lines executed:100.00% of 1
+Creating 'iostream.gcov'
+
+File '/usr/include/c++/4.7/bits/basic_ios.h'
+Lines executed:0.00% of 4
+Creating 'basic_ios.h.gcov'
+
+File '/usr/include/c++/4.7/ostream'
+No executable lines
+Removing 'ostream.gcov'
+
+File '/usr/include/c++/4.7/bits/move.h'
+Lines executed:100.00% of 5
+Creating 'move.h.gcov'
+
+File '/usr/include/c++/4.7/bits/locale_facets.h'
+Lines executed:0.00% of 5
+Creating 'locale_facets.h.gcov'
+
+File '/usr/include/c++/4.7/bits/ios_base.h'
+Lines executed:0.00% of 4
+Creating 'ios_base.h.gcov'
+
+File '/usr/include/c++/4.7/bits/char_traits.h'
+Lines executed:0.00% of 2
+Creating 'char_traits.h.gcov'
+
+        -:    0:Source:MirrorRAR.cpp
+        -:    0:Graph:MirrorRAR.gcno
+        -:    0:Data:MirrorRAR.gcda
+        -:    0:Runs:17
+        -:    0:Programs:1
+        -:    1:/*********************************************************
+        -:    2:* PROJECT: Mirror Mirror for ESOF322
+        -:    3:* 
+        -:    4:* FILE: MirrorsRAR.cpp
+        -:    5:*
+        -:    6:* DEV ENVIRONMENTS: TextWrangler on MacOS
+        -:    7:*
+        -:    8:* EXECUTION ENVIRONMENTS: Linux command line
+        -:    9:*
+        -:   10:* HISTORY:
+        -:   11:* Date		Author			Description
+        -:   12:* ====      ======          ===========
+        -:   13:* 12/9/16  Alex Reid       Initial implementation and test
+        -:   14:* 
+        -:   15:* DESCRIPTION:
+        -:   16:* Determines the minimal transformation (if properly transformed)
+        -:   17:* needed to go from the original to new pattern. Will return either
+        -:   18:* that the pattern was preserved, the degree of rotations, 
+        -:   19:* a vertical reflection, or the pattern was improperly transformed.
+        -:   20:* For purposes of evaluation, a 180 degree rotation is considered less
+        -:   21:* work than a vertical reflection.
+        -:   22:*/
+        -:   23:
+        -:   24://-------------
+        -:   25:// C++ Includes
+        -:   26://-------------
+        -:   27:#include<iostream>
+        -:   28:#include<algorithm>
+        -:   29:
+        -:   30://-----------------
+        -:   31:// Using Statements
+        -:   32://-----------------
+        -:   33:using namespace std;
+        -:   34:
+        -:   35:/*L00*/ char pattern[3][12][12];
+        -:   36:/*L01*/ int dimSize, dimSize2, patternNmbr = 0;
+        -:   37:
+       18:   38:bool same(){ /*L42*/
+       31:   39:	for(int ndx = 0; ndx < dimSize; ndx++)/*L43*/
+      137:   40:	for(int ndy = 0; ndy < dimSize; ndy++)/*L44*/
+      124:   41:	if(pattern[0][ndx][ndy] != pattern[1][ndx][ndy])/*L45*/ 
+       15:   42:		return false;/*L46*/
+        3:   43:	return true;/*L47*/
+        -:   44:}
+       61:   45:bool rotate(){ /*L48*/
+      145:   46:	for(int ndx = 0; ndx < dimSize; ndx++)/*L49*/
+      804:   47:	for(int ndy = 0; ndy < dimSize; ndy++)/*L50*/
+      720:   48:	if(pattern[0][ndx][ndy] != pattern[2][ndx][ndy])/*L51*/ 
+       50:   49:		return false;/*L52*/
+       11:   50:	return true;/*L53*/
+        -:   51:}
+       16:   52:void reflect(){ /*L54*/
+       51:   53:	for(int ndx = 0; ndx < dimSize2; ndx++)/*L55*/
+      298:   54:	for(int ndy = 0; ndy < dimSize; ndy++)/*L56*/
+      263:   55:	swap(pattern[2][ndx][ndy], pattern[2][dimSize-ndx-1][ndy]);/*L57*/
+       16:   56:}
+       18:   57:const char* evaluate(){ /*L07*/ 
+        -:   58:	//preserve
+       18:   59:	if(same()) return "preserved."; /*L08*/ 
+        -:   60:	
+        -:   61:	//90 deg
+      110:   62:	for(int ndx = 0; ndx < dimSize; ndx++) /*L09*/ 
+      852:   63:	for(int ndy = 0; ndy < dimSize; ndy++) /*L10*/ 
+      757:   64:	pattern[2][ndx][ndy] = pattern[1][ndy][dimSize-ndx-1];/*L11*/ 
+       15:   65:	if(rotate()) return "rotated 90 degrees."; /*L12*/ 
+        -:   66:	
+        -:   67:	//180 deg
+       87:   68:	for(int ndx = 0; ndx < dimSize; ndx++) /*L13*/ 
+      682:   69:	for(int ndy = 0; ndy < dimSize; ndy++) /*L14*/ 
+      607:   70:	pattern[2][ndx][ndy] = pattern[1][dimSize-ndx-1][dimSize-ndy-1];/*L15*/ 
+       12:   71:	if(rotate()) return "rotated 180 degrees."; /*L16*/ 
+        -:   72:	
+        -:   73:	//270 deg
+       73:   74:	for(int ndx = 0; ndx < dimSize; ndx++) /*L17*/ 
+      566:   75:	for(int ndy = 0; ndy < dimSize; ndy++) /*L18*/ 
+      503:   76:	pattern[2][ndx][ndy] = pattern[1][dimSize-ndy-1][ndx];/*L19*/ 
+       10:   77:	if(rotate()) return "rotated 270 degrees.";/*L20*/ 
+        -:   78:	
+        -:   79:	//vertical reflect
+       55:   80:	for(int ndx = 0; ndx < dimSize; ndx++) /*L21*/
+      414:   81:	for(int ndy = 0; ndy < dimSize; ndy++) /*L22*/
+      367:   82:	pattern[2][ndx][ndy] = pattern[1][dimSize-ndx-1][ndy];/*L23*/
+        8:   83:	if(rotate()) return "reflected vertically.";/*L24*/
+        -:   84:	
+        6:   85:	dimSize2 = dimSize/2;/*L25*/
+        -:   86:	//v90 deg
+       39:   87:	for(int ndx = 0; ndx < dimSize; ndx++) /*L26*/
+      284:   88:	for(int ndy = 0; ndy < dimSize; ndy++) /*L27*/
+      251:   89:	pattern[2][ndx][ndy] = pattern[1][ndy][dimSize-ndx-1];/*L28*/
+        6:   90:	reflect();/*L29*/
+        6:   91:	if(rotate()) return "reflected vertically and rotated 90 degrees.";/*L30*/
+        -:   92:	
+        -:   93:	//v180 deg
+       28:   94:	for(int ndx = 0; ndx < dimSize; ndx++) /*L31*/
+      174:   95:	for(int ndy = 0; ndy < dimSize; ndy++) /*L32*/
+      151:   96:	pattern[2][ndx][ndy] = pattern[1][dimSize-ndx-1][dimSize-ndy-1];/*L33*/
+        5:   97:	reflect();/*L34*/
+        5:   98:	if(rotate()) return "reflected vertically and rotated 180 degrees.";/*L35*/
+        -:   99:	
+        -:  100:	//v270 deg
+       28:  101:	for(int ndx = 0; ndx < dimSize; ndx++)/*L36*/
+      174:  102:	for(int ndy = 0; ndy < dimSize; ndy++)/*L37*/
+      151:  103:	pattern[2][ndx][ndy] = pattern[1][dimSize-ndy-1][ndx];/*L38*/
+        5:  104:	reflect();/*L39*/
+        5:  105:	if(rotate()) return "reflected vertically and rotated 270 degrees.";/*L40*/
+        -:  106:	
+        4:  107:	return "improperly transformed.";/*L41*/
+        -:  108:}
+       17:  109:int main(){ /*L02*/ 
+       52:  110:	while(cin >> dimSize){ /*L03*/ 
+      126:  111:		for(int ndx = 0; ndx < dimSize; ndx++) /*L04*/ 
+      108:  112:			cin >> pattern[0][ndx] >> pattern[1][ndx];/*L05*/ 
+       18:  113:	/*L06*/ cout << "Pattern " << ++patternNmbr << " was " << evaluate() << endl;
+        -:  114:	}
+       68:  115:}0

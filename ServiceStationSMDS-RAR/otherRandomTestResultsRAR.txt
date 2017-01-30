@@ -1,0 +1,24 @@
++++ServiceStationAMD Test Run+++
+Testing the file ServiceStationAMD.cpp
+
+Input File: ssIn01.txt   Output File: ssOut01.txt
+
+Input File: ssIn02.txt   Output File: ssOut02.txt
+
+Input File: ssIn03.txt   Output File: ssOut03.txt
+
+Input File: ssIn04.txt   Output File: ssOut04.txt
+
+Input File: ssIn05.txt   Output File: ssOut05.txt
+
+Input File: ssIn06.txt   Output File: ssOut06.txt
+
+Input File: ssIn07.txt   Output File: ssOut07.txt
+
+Input File: ssIn08.txt   Output File: ssOut08.txt
+
+Input File: ssIn09.txt   Output File: ssOut09.txt
+
+All test cases passed.
+
+---ServiceStationAMD Test Run---
